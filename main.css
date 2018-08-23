@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e5f2c9;
+  color: #352208;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  /* background-color: ##e5f2c9; */
+  /* padding: 10px; */
+}
+
+.headerContent {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  vertical-align: middle;
+  line-height: 50px;
+  padding-top: 20px;
+}
+#newNoteLink {
+  text-decoration: none;
+  color: #352208;
+}
+.hidden {
+  display: none;
+}
+
+.newNoteForm {
+  background-color: #BFBFBF;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.input-field {
+  margin: 10px;
+}
+
+#submitButton {
+    margin:10px;
+}
+.note {
+  margin: 10px;
+  background-color: #c0c9ab;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #352208;
+  list-style: none;
+}
+
+.noteTitle {
+  padding: 3px;
+}
+
+.noteText {
+  padding: 10px;
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tag {
+  font-size: .5rem;
+  margin: 5px;
+  padding: 5px;
+  background-color: #98C1D9;
+  border-radius: 25% 10%;
+}
+
+.deleteLink{
+    color: #AA4465;
+    padding: 20px;
+}
+
+.editLink{
+    color: #352208;
+    padding: 20px;
+}

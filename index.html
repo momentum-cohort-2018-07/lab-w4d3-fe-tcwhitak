@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+
+    <!-- import font awesome for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- must have defer or page will break -->
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <ul class="headerContent">
+            <li>
+                <h1>Notes</h1>
+            </li>
+            <li><a id="newNoteLink" href="#">new note <i class="fas fa-file-signature"></i></a></li>
+        </ul>
+    </div>
+    <form class="hidden newNoteForm" id="new-note-form" style="margin-bottom: 2rem;">
+        <div class="input-field">
+            <label for="note-title">Title</label>
+            <input type="text" id="note-title" name="title">
+        </div>
+        <div class="input-field">
+            <label for="note-text">Text</label>
+            <textarea id="note-text" rows="12" name="text"></textarea>
+        </div>
+        <div class="input-field">
+            <label for="note-tags">Tags</label>
+            <input type="text" id="note-tags" name="tags">
+        </div>
+            <button id="submitButton" type="submit">add note <i class="fas fa-marker"></i></button>
+    </form>
+
+    <div class="container">
+        <ul id="notesList">
+        </ul>
+    </div>
+
+</body>
+
+</html>
