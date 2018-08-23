@@ -16,7 +16,7 @@ document.getElementById('newNoteLink').addEventListener('click', event => {
 document.getElementById('new-note-form').addEventListener('submit', event => {
   event.preventDefault()
   // get value of tags input, split on commas, trim values and place in new array of strings for import to api
-  let newNoteTags = document.getElementById('note-tags').value.split(',').map(tag => tag.trim())
+  let newNoteTags = document.getElementById('note-tags').value.split(', ').map(tag => tag.trim())
   // gather data from note form in one object
   let formData = {
     title: document.getElementById('note-title').value.trim(),
@@ -85,6 +85,7 @@ function deleteNote (note) {
 // what happens when you click the edit link
 function editNote (note) {
   console.log('edit started')
+  console.log(note._id)
 }
 // what happens on page load and called when new notes are added to refresh list
 function loadNotes () {
